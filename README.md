@@ -1,1 +1,1 @@
-# electron-twitter
+# electron-angular2
