@@ -50,7 +50,6 @@ src/jspm_packages
 src/bower_components
 src/report
 
-
-src/app/**/*.js
-src/!app/**/system-config.js
-src/app/**/*.map
+src/app/renderer/**/*.js
+!src/app/**/system-config.js
+src/app/renderer/**/*.map
