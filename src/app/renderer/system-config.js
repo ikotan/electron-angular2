@@ -5,10 +5,14 @@ System.config({
   },
   packages: {
     'app': {
-      main: 'index.js',
+      main: 'renderer/bootstrap.js',
       defaultExtension: 'js'
     },
     '@angular/core': {
+      main: 'index.js',
+      defaultExtension: 'js'
+    },
+    '@angular/http': {
       main: 'index.js',
       defaultExtension: 'js'
     },

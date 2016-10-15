@@ -1,32 +1,19 @@
 import {Component, Input} from "@angular/core";
 import {TweetComponent} from "../tweet/tweet.component";
+import {Tweet} from "../../models/tweet.model";
 
 @Component({
   selector: 'timeline',
-  templateUrl: 'app/renderer/components/timeline/timeline.html'
+  templateUrl: 'app/renderer/components/timeline/timeline.html',
   directives: [TweetComponent]
 })
 
 export class TimelineComponent {
+
+  @Input()
+  tweets: Tweet[];
+
   constructor() {
     console.log("timeline");
   }
 }
-
-// import {Component, Input} from "@angular/core";
-// import {Todo} from "../../models/todo.model";
-
-// @Component({
-  // selector: 'todo-content',
-  // templateUrl: 'app/renderer/components/content/content.html'
-// })
-// export class TodoContentComponent {
-
-  // @Input()
-  // todos: Todo[];
-
-  // constructor() {
-    // console.log(this.todos);
-    // this.todos = this.todos || [];
-  // }
-// }

@@ -1,3 +1,8 @@
-<li className='list-group-item'>
-  <p>Tweet</p>
+<li className='list-group-item' *ngFor='let tweet of tweets'>
+  <img src="/" className='img-rounded media-object pull-left' width='32' height='32' />
+  <div className='media-body'>
+    <strong className='user-name'>hoge</strong>
+    <span className='user-screen_name'>@ikotan</span>
+    <p className='text'>{{ tweet.text }}</p>
+  </div>
 </li>
