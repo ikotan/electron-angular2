@@ -1,6 +1,5 @@
 import {Component} from "@angular/core";
 import {TimelineComponent} from "./components/timeline/timeline.component";
-// import {TwitterService} from "./service/twitter.service";
 import {Tweet} from "./models/tweet.model";
 
 @Component({

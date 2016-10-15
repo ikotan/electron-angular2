@@ -1,7 +1,6 @@
 System.config({
   map: {
     'rxjs': 'node_modules/rxjs',
-    'twit': 'node_modules/twit',
     '@angular': 'node_modules/@angular'
   },
   packages: {
@@ -35,10 +34,6 @@ System.config({
     },
     '@angular/router': {
       main: 'index.js',
-      defaultExtension: 'js'
-    },
-    'twit': {
-      main: 'lib/twitter.js',
       defaultExtension: 'js'
     },
     'rxjs': {
